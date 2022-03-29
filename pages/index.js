@@ -16,7 +16,7 @@ export default function Home() {
 
   useEffect(() => {
     fetchRecipes();
-  }, []);
+  }, []); // eslint-disable-next-line react-hooks/exhaustive-deps
 
   return (
     <Fragment>

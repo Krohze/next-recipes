@@ -5,13 +5,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@styled-icons/bootstrap": "^10.34.0",
     "@styled-icons/boxicons-logos": "^10.38.0",
     "@styled-icons/boxicons-solid": "^10.38.0",
     "@styled-icons/entypo": "^10.34.0",
+    "@styled-icons/icomoon": "^10.34.0",
     "@styled-icons/ionicons-outline": "^10.34.0",
     "@styled-icons/simple-icons": "^10.45.0",
     "axios": "^0.25.0",
