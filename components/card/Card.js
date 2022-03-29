@@ -1,4 +1,16 @@
-import { Container, Grid, Title, Text, Row, Image, Icon } from "./cardStyles";
+import {
+  Container,
+  Grid,
+  Title,
+  Text,
+  Row,
+  Info,
+  Image,
+  TimerIcon,
+  ScoreIcon,
+  Spinner,
+  NoCards,
+} from "./cardStyles";
 
 export default function Card({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
@@ -20,15 +32,25 @@ Card.Text = function CardText({ children, ...restProps }) {
   return <Text {...restProps}>{children}</Text>;
 };
 
-Card.Info = function CardInfo({ icon, children, ...restProps }) {
+Card.Info = function CardInfo({ children, type }) {
   return (
-    <Row {...restProps}>
-      <Icon src={icon} />
-      <p>{children}</p>
-    </Row>
+    <Info>
+      {type == "time" ? <TimerIcon /> : type == "score" ? <ScoreIcon /> : ""}
+      <p>
+        {children} {type == "time" ? "mins" : ""}
+      </p>
+    </Info>
   );
 };
 
 Card.Row = function CardRow({ children, ...restProps }) {
   return <Row {...restProps}>{children}</Row>;
+};
+
+Card.Spinner = function CardSpinner() {
+  return <Spinner />;
+};
+
+Card.NoCards = function CardNoCards() {
+  return <NoCards>No results</NoCards>;
 };

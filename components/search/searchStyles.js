@@ -46,5 +46,6 @@ export const Button = styled.button`
   font-weight: 700;
   &:hover {
     background-color: ${(props) => props.theme.color.dark};
+    cursor: pointer;
   }
 `;

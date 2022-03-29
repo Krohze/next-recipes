@@ -1,13 +1,12 @@
-import { Fragment } from "react";
-import { Meta, Header, Footer } from "./";
+import { Fragment, useState } from "react";
+import { Meta } from "./";
+import { useFetch } from "../hooks/useFetch";
 
 export default function Layout({ children }) {
   return (
     <Fragment>
       <Meta />
-      <Header />
       {children}
-      <Footer />
     </Fragment>
   );
 }
