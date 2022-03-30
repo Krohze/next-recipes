@@ -6,6 +6,8 @@ This project is a recipe search app built with [Next.js](https://nextjs.org/) an
 
 This app makes it possible to search for recipes of your liking. Simply type the name of the food in the search bar and press 'Enter' or click on 'Search'. You will then see a list of 24 cards containing recipe information and images, which when clicked on will send you to the website the recipe is posted in.
 
+![recipes-next](https://user-images.githubusercontent.com/55405613/160728627-90212c92-59de-4b29-bd67-a46401ffd202.jpg)
+
 ## Try it
 
 The app is hosted on Firebase at: [recipes-next](https://recipes-next.web.app/)
